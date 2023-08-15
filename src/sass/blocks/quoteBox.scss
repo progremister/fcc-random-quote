@@ -1,0 +1,50 @@
+#quote-box {
+  width: fit-content;
+  max-width: 60rem;
+
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+
+
+  .quote-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 1rem 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    animation: fadeIn 2s;
+
+    .quote {
+        display: flex;
+        margin-bottom: 3rem;
+
+        svg {
+            min-width: 5%;
+        }
+    }
+  }
+
+  #author {
+    text-align: right;
+    font-size: 1.6rem;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    };
+    100% {
+        opacity: 100%;
+    }
+  }
+}

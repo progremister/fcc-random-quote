@@ -1,0 +1,21 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button, a {
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding: .75rem .75rem .75rem .90rem;
+    width: fit-content;
+    font-weight: 500;
+    background-color: $black;
+    transition: all .2s linear;
+    color: $white;
+    font-size: 1.4rem;
+
+    svg {
+        font-size: 2rem;
+        transform: translateY(3px);
+    }
+}
